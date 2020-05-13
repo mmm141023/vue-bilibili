@@ -22,10 +22,7 @@ export default {
   methods: {
     async getUserDetails () {
       const id = localStorage.getItem('id')
-      const token = localStorage.getItem('token')
-      const res = await this.$http.get('/user/' + id, {
-        headers: { Authorization: 'Bearer ' + token }
-      })
+      const res = await this.$http.get('/user/' + id)
       this.setUserDetails(res.data[0])
     },
     ...mapMutations(['setUserDetails'])

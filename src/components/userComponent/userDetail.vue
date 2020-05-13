@@ -20,7 +20,7 @@
             <span class="user_text">获赞</span>
           </p>
         </div>
-        <div >
+        <div>
           <div class="user_editBtn">编辑资料</div>
         </div>
       </div>
@@ -35,6 +35,7 @@
 
 <script>
 import { mapState } from 'vuex'
+
 export default {
   name: 'userDetail',
   computed: {
@@ -47,20 +48,26 @@ export default {
   .userdetail {
     background-color: white;
     padding: 2vw 3.333vw;
+
     > div:nth-child(1) {
       display: flex;
+
       .user_img {
         margin-right: 5.556vw;
+
         img {
           height: 23.611vw;
           width: 23.611vw;
           border-radius: 50%;
         }
       }
+
       .user_edit {
         flex: 1;
+
         div:nth-child(1) {
           display: flex;
+
           p {
             flex: 1;
             display: flex;
@@ -68,17 +75,21 @@ export default {
             align-items: center;
             flex-direction: column;
             font-size: 3.611vw;
+
             .user_text {
               color: #aaa;
             }
           }
+
           p:nth-child(1),
           p:nth-child(2) {
             border-right: 0.278vw solid #ccc;
           }
         }
+
         div:nth-child(2) {
           padding: 0.556vw 2.778vw;
+
           .user_editBtn {
             border: 0.278vw solid #fb7a9f;
             padding: 0.833vw;
@@ -91,12 +102,14 @@ export default {
         }
       }
     }
-    >div:nth-child(2){
-      h2{
+
+    > div:nth-child(2) {
+      h2 {
         margin: 2.778vw 0 0.833vw 0;
         font-weight: 400;
       }
-      p{
+
+      p {
         padding: 0;
         margin: 2.778vw 0 0 0;
         color: #999;

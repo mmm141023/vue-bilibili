@@ -37,8 +37,13 @@ export default {
           password: this.password
         })
         Toast.fail(res.data.msg)
+        if (res.data.msg === '登录成功') {
+          localStorage.setItem('id', res.data.id)
+          localStorage.setItem('token', res.data.token)
+          this.$router.push('/userinfo')
+        }
       } else {
-        Toast.fail('请输入用户名密码')
+        Toast.fail('请重新输入用户名密码')
       }
     }
   }
