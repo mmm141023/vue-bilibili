@@ -1,13 +1,13 @@
 <template>
     <div>
-      <van-field :label="label" :type="type" :placeholder="placeholder" :rule="rule" v-model="context"/>
+      <van-field :maxlength="maxlength" :label="label" :type="type" :placeholder="placeholder" :rule="rule" v-model="context"/>
     </div>
 </template>
 
 <script>
 export default {
   name: 'InputField',
-  props: ['label', 'type', 'rule', 'placeholder'],
+  props: ['label', 'type', 'rule', 'placeholder', 'maxlength'],
   data () {
     return {
       context: ''

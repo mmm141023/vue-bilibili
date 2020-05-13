@@ -2,7 +2,9 @@
     <div class="header">
       <div></div>
       <div>{{middleval}}</div>
-      <div></div>
+      <div>
+        <slot name="changeLogin"/>
+      </div>
     </div>
 </template>
 
