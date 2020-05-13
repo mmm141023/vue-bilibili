@@ -4,6 +4,7 @@ import Login from '@/views/Login'
 import Register from '../views/Register'
 import { Toast } from 'vant'
 import UserInfo from '../views/UserInfo'
+import EditUserInfo from '../views/EditUserInfo'
 Vue.use(VueRouter)
 
 const routes = [
@@ -26,6 +27,14 @@ const routes = [
     path: '/userinfo',
     name: 'UserInfo',
     component: UserInfo,
+    meta: {
+      istoken: true
+    }
+  },
+  {
+    path: '/edit',
+    name: 'EditUserInfo',
+    component: EditUserInfo,
     meta: {
       istoken: true
     }

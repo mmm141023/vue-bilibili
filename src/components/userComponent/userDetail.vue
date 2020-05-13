@@ -20,7 +20,7 @@
             <span class="user_text">获赞</span>
           </p>
         </div>
-        <div>
+        <div @click="$router.push('/edit')">
           <div class="user_editBtn">编辑资料</div>
         </div>
       </div>
