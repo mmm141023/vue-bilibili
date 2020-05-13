@@ -4,10 +4,10 @@ import router from './router'
 import store from './store'
 import Vant from 'vant'
 import 'vant/lib/index.css'
-
+import http from '../http'
 Vue.use(Vant)
 Vue.config.productionTip = false
-
+Vue.prototype.$http = http
 new Vue({
   router,
   store,
